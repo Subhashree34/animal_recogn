@@ -1,0 +1,59 @@
+<html>
+    <head>
+        <title> Animal Recognition By Sound </title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!DOCTYPE html>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(Cat.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .header {
+            background-color: black;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+        .main-content {
+            text-align: center;
+            padding: 20px;
+        }
+        #cta-button {
+            background-color: pink;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+        h2{
+            color: white;
+        }
+    </style>
+    </head>
+    <body>
+    <div class="header">
+        <h1>Animals Recognition</h1>
+    </div>
+    <div class="main-content">
+        <h2><b>Play different sounds like meowing and barking</b></h2>
+    </div>
+    <div class="main_div">
+        <center>
+          <br>
+          <button id="cta-button" onclick="startClassification();">START</button>
+          <div class="img"></div>
+          <h3 id="result_label">I can hear - </h3>
+          <h4 id="result_confidence">Accuracy - </h4>
+          <br>
+          </center>
+      </div>
+</body>
+</html>
